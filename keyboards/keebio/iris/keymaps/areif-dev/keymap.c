@@ -2,10 +2,12 @@
 
 
 #define _QWERTY 0
-#define _LOWER 1
-#define _RAISE 2
+#define _LOWER  1
+#define _RAISE  2
 #define _ADJUST 3
 #define _GAMING 4
+
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 20
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
@@ -68,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_LSFT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LALT,          KC_TRNS, KC_TRNS,  KC_1,    KC_2,    KC_3,    KC_ENT, KC_RSFT,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
-                                    KC_TRNS, KC_TRNS, KC_TRNS,                     KC_0,  KC_DOT,  TG(_ADJUST) 
+                                    KC_TRNS, KC_TRNS, KC_TRNS,                     KC_0,  KC_DOT,  TG(_ADJUST)
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   ),
 
