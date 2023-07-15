@@ -7,7 +7,7 @@
 #define _ADJUST 3
 #define _GAMING 4
 
-#define MOUSEKEY_WHEEL_TIME_TO_MAX 20
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 5
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
